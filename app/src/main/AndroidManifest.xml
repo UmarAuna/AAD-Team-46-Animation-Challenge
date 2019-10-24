@@ -13,13 +13,13 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".SplashScreen" android:theme="@style/SplashScreenTheme"/>
 
         <activity
             android:name=".TeamMembers"
             android:label="TeamMembers"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".SplashScreen">
+
+        <activity android:name=".SplashScreen" android:theme="@style/SplashTheme">
 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,7 +30,7 @@
 
 
         <activity android:name=".AboutALCActivity"
-            android:theme="@style/SplashScreenTheme"
+            android:theme="@style/SplashTheme"
            android:label="@string/about_label" />
           
         <activity android:name=".MainActivity">
@@ -38,6 +38,5 @@
 
     </application>
 
-    <uses-permission android:name="android.permission.INTERNET" />
 
 </manifest>
